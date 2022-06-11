@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "d56d7b52-ee0d-4a04-af0c-7006adca418b",
+		"name": "Nilin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Last Trades",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.opex.dev/api/v3/trades?symbol=BTCUSDT&limit=100",
+					"protocol": "https",
+					"host": [
+						"api",
+						"opex",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v3",
+						"trades"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "limit",
+							"value": "100",
+							"description": "Default 500; Valid limits: 1 min - 1000 max"
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.opex.dev/api/v3/trades?symbol=BTCUSDT&limit=100",
+							"protocol": "https",
+							"host": [
+								"api",
+								"opex",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v3",
+								"trades"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "BTCUSDT"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 12:16:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "expires",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1 ; mode=block"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LYH8xLQUX6MEKln7FPUYQxoPKwMcVdnypFJPuvkSlOVohNi9D2yCRf0kJTcbYXoBagX9AbDobyxnfELGTvvQeEAo2Nivm3CusPk%2FXAlbzvo3ose1rCIszfDC3yJravg%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6844c09a598c4e20-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"price\": 200,\n        \"qty\": 1,\n        \"quoteQty\": 2000,\n        \"time\": 1629891022597,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 1,\n        \"price\": 50000,\n        \"qty\": 0.01,\n        \"quoteQty\": 2000,\n        \"time\": 1629812777766,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 36,\n        \"price\": 44,\n        \"qty\": 2,\n        \"quoteQty\": 2000,\n        \"time\": 1629619885445,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 35,\n        \"price\": 50000,\n        \"qty\": 0.01,\n        \"quoteQty\": 500,\n        \"time\": 1629615330123,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 34,\n        \"price\": 44,\n        \"qty\": 0.01,\n        \"quoteQty\": 500,\n        \"time\": 1629557432732,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 33,\n        \"price\": 44,\n        \"qty\": 1,\n        \"quoteQty\": 100,\n        \"time\": 1629532023548,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 32,\n        \"price\": 44,\n        \"qty\": 0.74,\n        \"quoteQty\": 7.4,\n        \"time\": 1629209330792,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 31,\n        \"price\": 44,\n        \"qty\": 1.56,\n        \"quoteQty\": 15.6,\n        \"time\": 1629209288762,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 30,\n        \"price\": 44,\n        \"qty\": 1,\n        \"quoteQty\": 200,\n        \"time\": 1629209189695,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 29,\n        \"price\": 44,\n        \"qty\": 33,\n        \"quoteQty\": 3300,\n        \"time\": 1629208315054,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 28,\n        \"price\": 44,\n        \"qty\": 6,\n        \"quoteQty\": 36,\n        \"time\": 1629208034756,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 27,\n        \"price\": 44,\n        \"qty\": 0.4,\n        \"quoteQty\": 500000,\n        \"time\": 1629207999522,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 25,\n        \"price\": 77,\n        \"qty\": 0.88,\n        \"quoteQty\": 385,\n        \"time\": 1629207999312,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 26,\n        \"price\": 100,\n        \"qty\": 8.72,\n        \"quoteQty\": 872,\n        \"time\": 1629207999295,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 24,\n        \"price\": 77,\n        \"qty\": 2.87,\n        \"quoteQty\": 385,\n        \"time\": 1629207367039,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 23,\n        \"price\": 77,\n        \"qty\": 1.25,\n        \"quoteQty\": 385,\n        \"time\": 1629207309973,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 22,\n        \"price\": 44,\n        \"qty\": 1,\n        \"quoteQty\": 5,\n        \"time\": 1629207307962,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 21,\n        \"price\": 200,\n        \"qty\": 0.06,\n        \"quoteQty\": 2000,\n        \"time\": 1629206846589,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 20,\n        \"price\": 200,\n        \"qty\": 3.2,\n        \"quoteQty\": 2000,\n        \"time\": 1629206030873,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 18,\n        \"price\": 1,\n        \"qty\": 0,\n        \"quoteQty\": 1.9,\n        \"time\": 1629204547066,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 19,\n        \"price\": 1,\n        \"qty\": 0.4,\n        \"quoteQty\": 1.9,\n        \"time\": 1629204547051,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 17,\n        \"price\": 1,\n        \"qty\": 0,\n        \"quoteQty\": 1.9,\n        \"time\": 1629204547031,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 16,\n        \"price\": 100,\n        \"qty\": 1,\n        \"quoteQty\": 1.9,\n        \"time\": 1629204547014,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 15,\n        \"price\": 100,\n        \"qty\": 0.5,\n        \"quoteQty\": 1.9,\n        \"time\": 1629204546992,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 14,\n        \"price\": 200,\n        \"qty\": 1.2,\n        \"quoteQty\": 2000,\n        \"time\": 1629204328613,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 13,\n        \"price\": 200,\n        \"qty\": 1,\n        \"quoteQty\": 2000,\n        \"time\": 1629204292566,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 12,\n        \"price\": 100,\n        \"qty\": 0.5,\n        \"quoteQty\": 5,\n        \"time\": 1629204167464,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 11,\n        \"price\": 25,\n        \"qty\": 1.5,\n        \"quoteQty\": 37.5,\n        \"time\": 1629188617214,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 10,\n        \"price\": 25,\n        \"qty\": 1.5,\n        \"quoteQty\": 37.5,\n        \"time\": 1629187347255,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 9,\n        \"price\": 200,\n        \"qty\": 3,\n        \"quoteQty\": 2000,\n        \"time\": 1629187135101,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 8,\n        \"price\": 1,\n        \"qty\": 7,\n        \"quoteQty\": 2000,\n        \"time\": 1629187048041,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 6,\n        \"price\": 1,\n        \"qty\": 7,\n        \"quoteQty\": 200000,\n        \"time\": 1629187032016,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 7,\n        \"price\": 1,\n        \"qty\": 3,\n        \"quoteQty\": 200000,\n        \"time\": 1629187031501,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 5,\n        \"price\": 1,\n        \"qty\": 1,\n        \"quoteQty\": 1000,\n        \"time\": 1629186574613,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 4,\n        \"price\": 1,\n        \"qty\": 1,\n        \"quoteQty\": 45913.88,\n        \"time\": 1629186537529,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 3,\n        \"price\": 1,\n        \"qty\": 1,\n        \"quoteQty\": 45913.88,\n        \"time\": 1629186510477,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 2,\n        \"price\": 5,\n        \"qty\": 1,\n        \"quoteQty\": 5,\n        \"time\": 1629186487519,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    },\n    {\n        \"id\": 1,\n        \"price\": 471,\n        \"qty\": 1,\n        \"quoteQty\": 499.26,\n        \"time\": 1629183166905,\n        \"isBuyerMaker\": false,\n        \"isBestMatch\": true\n    }\n]"
+				},
+				{
+					"name": "Failed Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.opex.dev/api/v3/trades?symbol=BTCUSDTr&limit=100",
+							"protocol": "https",
+							"host": [
+								"api",
+								"opex",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v3",
+								"trades"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "BTCUSDTr"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 12:16:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "expires",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1 ; mode=block"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=RH2j1Yh3jaKIL05LwVZPc7SIAnU6OnAt9LQJlfWHyQ%2B0FtjDZryx55k4%2F5SuuYPvajiQNiRMNqYqbFSq6tmH4YKKThXcPPlPK46X3%2BW3gtE1B3akMjyA9ZHbRqUZiX4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6844c12aeb8e4e20-FRA"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"SymbolNotFound\",\n    \"code\": 7002,\n    \"message\": \"No symbol found\",\n    \"timestamp\": 1629893818081\n}"
+				},
+				{
+					"name": "Invalid limit",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.opex.dev/api/v3/trades?symbol=BTCUSDT&limit=100000",
+							"protocol": "https",
+							"host": [
+								"api",
+								"opex",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v3",
+								"trades"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "BTCUSDT"
+								},
+								{
+									"key": "limit",
+									"value": "100000"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 12:17:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "120"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "expires",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1 ; mode=block"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gnC0USe%2B1%2BGFlcWOQo5y1%2BqvYF08FDXMOPRzRnb5fJSQzjwvnbVOsiNIp%2B8lfpxIgMgoIVubGZByuKgfog0k5xCYvHN5HMBHO9IXeoeL6fG5BMQRJXGnChJBdRMyOgo%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "6844c1b9df184e20-FRA"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"InvalidLimitForRecentTrades\",\n    \"code\": 7004,\n    \"message\": \"Valid limits: 1 min - 1000 max\",\n    \"timestamp\": 1629893840967\n}"
+				}
+			]
+		}
+	]
+}

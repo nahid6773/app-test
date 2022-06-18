@@ -1,0 +1,39 @@
+@media (max-width: 575.98px) {
+    .app{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .form-container {
+        width: 80%;
+    }
+
+    .form-show {
+        width: 80%;
+    }
+    .editform{
+        width: 70%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .app{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .form-container {
+        width: 80%;
+    }
+
+    .form-show {
+        width: 80%;
+    }
+    .editform{
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}

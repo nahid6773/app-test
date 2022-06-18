@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1ecec;
+}
+.app{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.form-container{
+    border: 1px solid gray;
+    background-color: rgb(246, 247, 248);
+    width: 50%;
+    height:20em;
+    border-radius: 1rem;
+}
+.form-show{
+    border: 1px solid gray;
+    height: 20em;
+    border-radius: 1rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    background-color: rgb(246, 247, 248);
+}
+.form_show--div{
+    margin-top: 2%;
+}
+.btn-delete{
+    width: 100px;
+    height: 40px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(114, 28, 28);  border: none;
+    border-radius: 1rem;
+}
+.btn-edit{
+    width: 100px;
+    height: 40px;
+    color: rgb(247, 244, 244);
+    background-color: rgb(30, 75, 26);
+    border: none;
+    border-radius: 1rem;
+}
+.show-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.editform{
+    border: 1px solid gray;
+    border-radius: 1rem;
+    width: 30%;
+    height:10em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.input-edit{
+    height: 40px;
+    width: 50%;
+    border-radius: 1rem;
+    border: 1px solid gray;
+}
